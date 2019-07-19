@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {StarWarsPeople} from './components/StarWarsPeople'
 import axios from 'axios'
 
 import './App.css';
@@ -12,17 +13,17 @@ import './App.css';
 
 const App = () => {
   const [names, setNames] = useState([])
-  const [index ,setIndex] = useState([])
+  // const [index ,setIndex] = useState([])
 
   useEffect(() => {
     axios.get('https://swapi.co/api/people/')
     .then(response => {
-      const res = response.data.results
-      console.log('dataObj', res ) 
+      // return res = response.data.results
+      console.log('dataObj', response.data.results ) 
       // res.map(names => {return <div>{names}</div>})
-      setNames(res[0].name)
+      return setNames(response.data.results)
       // {res.map((names) => {return {names}})}
-      console.log('checkHere', res[0].name )
+      // console.log('checkHere', res[0].name )
       
     })
      .catch(error => {
@@ -30,16 +31,16 @@ const App = () => {
      }) 
 
     
-  },[names])
+  },[])
 console.log('OutsideNames', names)
-console.log('OutsideIndex', index)
+// console.log('OutsideIndex', index)
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <div>
-        {/* {names} */}
+        {names}
       
-      {index.map((names) => {return names={names}})}
+      <StarWarsPeople key={names} info={names}/>
       </div>
     </div>
   );
