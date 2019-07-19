@@ -12,6 +12,7 @@ import './App.css';
 
 const App = () => {
   const [names, setNames] = useState([])
+  const [index ,setIndex] = useState([names])
 
   useEffect(() => {
     axios.get('https://swapi.co/api/people/')
@@ -20,7 +21,7 @@ const App = () => {
       console.log('dataObj', res ) 
       // res.map(names => {return <div>{names}</div>})
       setNames(res[0].name)
-      {res.map((names) => {return {names}})}
+      // {res.map((names) => {return {names}})}
       // console.log('checkHere', index)
       
     })
@@ -29,15 +30,16 @@ const App = () => {
      }) 
 
     
-  },[names])
+  },[index])
 console.log('OutsideNames', names)
+console.log('OutsideIndex', index)
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <div>
-      {names}
+        {names}
       
-      {/* {nums.map((names => {return <StarWarsPeople info={names} />}))} */}
+      {/* {names.map((name) => {return {name}})} */}
       </div>
     </div>
   );
