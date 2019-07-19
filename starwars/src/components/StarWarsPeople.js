@@ -1,4 +1,5 @@
 import React from 'react'
+import { PeopleStyle } from './Styles';
 
 // export function StarWarsPeople(props){
 //     console.log(props)
@@ -19,10 +20,11 @@ import React from 'react'
 
     export function StarWarsPeople(props){
         console.log('props', props)
+        console.log('data', props.info)
         return(
             <div className='container'>
                 {props.info.map(data =>
-                 <h2>{data.name}</h2>       
+               { return <PeopleStyle>{data.name}</PeopleStyle>}       
             )}
             </div>
         )}

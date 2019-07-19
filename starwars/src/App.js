@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {StarWarsPeople} from './components/StarWarsPeople'
+import {TitleStyle, Container} from './components/Styles'
 import axios from 'axios'
 
 import './App.css';
@@ -19,9 +20,9 @@ const App = () => {
     axios.get('https://swapi.co/api/people/')
     .then(response => {
       // return res = response.data.results
-      console.log('dataObj', response.data.results ) 
+      // console.log('dataObj', response.data.results ) 
       // res.map(names => {return <div>{names}</div>})
-      return setNames(response.data.results)
+      setNames(response.data.results)
       // {res.map((names) => {return {names}})}
       // console.log('checkHere', res[0].name )
       
@@ -35,14 +36,12 @@ const App = () => {
 console.log('OutsideNames', names)
 // console.log('OutsideIndex', index)
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
-      <div>
-        {names}
+    <Container>
+      <TitleStyle>React Wars</TitleStyle>
       
-      <StarWarsPeople key={names} info={names}/>
-      </div>
-    </div>
+      <StarWarsPeople info={names}/>
+    </Container>
+
   );
 }
 
