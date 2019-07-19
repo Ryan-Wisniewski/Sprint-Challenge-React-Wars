@@ -14,29 +14,35 @@ import './App.css';
   // const
 const App = () => {
  const [names, setNames] = useState([])
-console.log('check State', names)
+ const [index, setIndex] = useState([names])
+console.log('checkName State', names)
+console.log('checkIndex State', index)
   useEffect(() => {
     axios.get('https://swapi.co/api/people/')
     .then(response => {
       const res = response.data.results
+      for (let i = 0; i < names.length; i++){
+        return names[index]
+      }
       console.log('dataObj', res) 
-      setNames(res[1].name)
-      console.log('nameresult', res  )
-      console.log('setNames check', names)
+      setNames(res[0].name)
+      // console.log('nameresult', res  )
+      // console.log('names = ', names)
     })
      .catch(error => {
        console.log("Server API not functioning", error)
      }) 
 
     
-  },[names])
+  },[index])
 
   return (
     
     <div className="App">
       <h1 className="Header">React Wars</h1>
-        {names}
-        {/* {names.map((named) => {return <StarWarsPeople name={named} />})} */}
+        {/* {names} */}
+        {/* {names.map((index) => {return <StarWarsPeople info={index} />})} */}
+        <StarWarsPeople info={names}/>
 
     </div>
   );

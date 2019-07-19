@@ -1,6 +1,10 @@
 import React from 'react'
 
 export const StarWarsPeople = (props) => { 
+    console.log('props', props)
     return(
-        <p>{props.name}</p>
+    <div>
+    <p>{props.info}</p>
+    <p>Hardcode removeme</p>
+    </div>    
 )}
