@@ -31,4 +31,3 @@ var num = 1+1
             </div>
         )}
 
-let x =x
