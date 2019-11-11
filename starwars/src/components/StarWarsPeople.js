@@ -17,7 +17,7 @@ import { PeopleStyle } from './Styles';
     //     <p>{props.info}</p>
     //     <p>Hardcode removeme</p>
     //     </div> 
-
+var sdf = 'sdf'
     export function StarWarsPeople(props){
         console.log('props', props)
         console.log('data', props.info)
