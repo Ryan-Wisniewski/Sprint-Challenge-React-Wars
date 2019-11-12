@@ -17,3 +17,118 @@ const App = () => {
 }
 
 export default App;
+// broken
+
+var sdf = 'sdf'
+var num = 1+1
+
+    export function StarWarsPeople(props){
+        console.log('props', props)
+        console.log('data', props.info)
+        return(
+            <div className='container'>
+                {props.info.map(data =>
+               { return <PeopleStyle>{data.name}</PeopleStyle>}       
+            )}
+            </div>
+
+
+var sdf = 'sdf'
+var num = 1+1
+
+    export function StarWarsPeople(props){
+        console.log('props', props)
+        console.log('data', props.info)
+        return(
+            <div className='container'>
+                {props.info.map(data =>
+               { return <PeopleStyle>{data.name}</PeopleStyle>}       
+            )}
+            </div>
+
+
+var sdf = 'sdf'
+var num = 1+1
+
+    export function StarWarsPeople(props){
+        console.log('props', props)
+        console.log('data', props.info)
+        return(
+            <div className='container'>
+                {props.info.map(data =>
+               { return <PeopleStyle>{data.name}</PeopleStyle>}       
+            )}
+            </div>
+            var sdf = 'sdf'
+var num = 1+1
+
+    export function StarWarsPeople(props){
+        console.log('props', props)
+        console.log('data', props.info)
+        return(
+            <div className='container'>
+                {props.info.map(data =>
+               { return <PeopleStyle>{data.name}</PeopleStyle>}       
+            )}
+            </div>
+
+
+var sdf = 'sdf'
+var num = 1+1
+
+    export function StarWarsPeople(props){
+        console.log('props', props)
+        console.log('data', props.info)
+        return(
+            <div className='container'>
+                {props.info.map(data =>
+               { return <PeopleStyle>{data.name}</PeopleStyle>}       
+            )}
+            </div>
+
+
+var sdf = 'sdf'
+var num = 1+1
+
+    export function StarWarsPeople(props){
+        console.log('props', props)
+        console.log('data', props.info)
+        return(
+            <div className='container'>
+                {props.info.map(data =>
+               { return <PeopleStyle>{data.name}</PeopleStyle>}       
+            )}
+            </div>var sdf = 'sdf'
+var num = 1+1
+
+    export function StarWarsPeople(props){
+        console.log('props', props)
+        console.log('data', props.info)
+        return(
+            <div className='container'>
+                {props.info.map(data =>
+               { return <PeopleStyle>{data.name}</PeopleStyle>}       
+            )}
+            </div>var sdf = 'sdf'
+var num = 1+1
+
+    export function StarWarsPeople(props){
+        console.log('props', props)
+        console.log('data', props.info)
+        return(
+            <div className='container'>
+                {props.info.map(data =>
+               { return <PeopleStyle>{data.name}</PeopleStyle>}       
+            )}
+            </div>var sdf = 'sdf'
+var num = 1+1
+
+    export function StarWarsPeople(props){
+        console.log('props', props)
+        console.log('data', props.info)
+        return(
+            <div className='container'>
+                {props.info.map(data =>
+               { return <PeopleStyle>{data.name}</PeopleStyle>}       
+            )}
+            </div>
